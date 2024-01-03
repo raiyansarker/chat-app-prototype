@@ -71,7 +71,7 @@ export default function ChatMessages({
       {incomingMessages.map((chat, i) => (
         <div
           key={i}
-          className="max-w-fit rounded-2xl"
+          className="max-w-fit rounded-full"
           style={{
             backgroundColor:
               userId === chat.sender ? "rgb(99 102 241)" : "rgb(212 212 212)",
