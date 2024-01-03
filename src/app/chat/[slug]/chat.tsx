@@ -42,6 +42,7 @@ export default function ChatMessages({
 
     return () => {
       pusherClient.unsubscribe(slug);
+      pusherClient.unbind("message");
     };
   }, []);
 
@@ -50,7 +51,7 @@ export default function ChatMessages({
       {prevMessages.map((chat, i) => (
         <div
           key={i}
-          className="max-w-fit rounded-2xl"
+          className="max-w-fit rounded-full"
           style={{
             backgroundColor:
               userId === chat.userId ? "rgb(99 102 241)" : "rgb(212 212 212)",
