@@ -130,7 +130,7 @@ export function SendMessage({ slug, chatId }: SendMessageProps) {
         {...register("message")}
         type="text"
         placeholder="Type a message"
-        className="w-full"
+        className="w-full rounded-full"
       />
       <Button>Send</Button>
     </form>
